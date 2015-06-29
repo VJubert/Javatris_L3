@@ -1,0 +1,10 @@
+HAUT   : tourner la pièce
+GAUCHE : bouger la pièce vers la gauche
+DROITE : bouger la pièce vers la droite
+BAS    : accelérer la descente de la pièce
+ESPACE : faire descendre la pièce d'un coup
+
+Clic GAUCHE : bouger la piece (droite ou gauche)
+Clic DROIT  : tourner la piece
+MOLETTE     : descendre la piece
+Clic MOLETTE: tomber la piece

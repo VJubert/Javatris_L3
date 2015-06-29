@@ -1,0 +1,16 @@
+1/ Gestion des Highscore
+2/ Multijoueur
+3/ Affichage pièce suivante (déjà réalisé)
+4/ Level
+5/ Faire jouer une IA
+6/ Java 8 (certainement pour IA)
+7/ Choisir level de départ
+8/ Choisir nb de ligne pré-rempli (et leur densité)
+9/ Statistique (APM/Hésitation)
+10/ Choisir Interface
+11/ Combo
+12/ Gravité
+13/ Plateau de jeu circulaire (au niveau des bords)
+14/ Ajouter plusieurs style graphique (retro-neon-...)
+15/ Sauvegarde partie (fichier) (installateur pour execution automatique suivant une certaine extension, icone installé 
+dans le registre) 

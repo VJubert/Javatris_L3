@@ -1,0 +1,64 @@
+Ludo:
+
+09/02
+
+Je viens de voir tout ce que vous avez fait et enduré pendant que j'étais en week end, quelle galère !
+Concernant la classe Tetromino, j'en avais déjà parlé avec toi Rémi je comprend l'idée d'avoir des tableaux à 3 dimensions pour
+ les rotations de chaque pièce, mais question pratique est-ce qu'il ne faudrait pas plutot faire des listes de tableaux à 2 
+ dimensions ? Ce qui, au fond, revient au même, mais d'un point de vue pratique, cela me parait plus abordable.
+
+Je vous en reparlerai cet après-midi quoi qu'il arrive.
+
+
+---------------------------------------------------------------------------
+
+Rémi:
+
+07/02
+
+- Ok ça marche parfaitement bien, ça venait d'où ?
+  Faut maintenant gérer les pièces, tu parlais de pièces mal positionnées,
+  c'est par rapport à la pièce suivante qui est mal placée ?
+
+----------------------------------------------------------------------------
+Valentin :
+7/02
+J'ai changé un peu la solution et ça marche pareil. Enfaite on dessinait le fenetre sans rien et on lui disait pas de redessiner
+après avoir ajouter les éléments (me demande pas pourquoi ça marchait de temps en temps)
+
+Le premier état de certaine pièce sont différent si je me fit à mon expérience sur le tetris de ubuntu
+
+Et aussi des fois les pièces se barrent au lieu de rester sur le même pivot
+
+-------------------------------------------------------------------------------------------------------------------------
+Normalement le problème est résolu, j'ai ajouté 2 petites lignes de codes
+
+Si le problème réapparait redimensionnez la fenêtre l'affichage se fait (solution de fortune)
+--------------------------------------------------------------------------------------------------------------------------
+6/02
+Va vraiment falloir se pencher sur ce probleme de démarrage, parce que j'ai du relancer 4 (et encore j'suis gentil) fois 
+le prog pour qu'il fonctionne.
+
+Les pièces sont pas bien tournés dans leur état de base
+
+Et ça redimensionne pas, ça rogne (quand on change le tile_size)
+
+Lance le à répetition tu verras ça marche (c'est ce que je fais, j'en lance une douzaine et je kill tous ça au gestionnaire
+ des tâches). J'arrive à en avoir 1 ou 2 à chaque fois, mais va falloir se pencher sur ce truc à la con
+ 
+ --------------------------------------------------------------------------------------------------------------------------
+4/02
+J'ai eu quelques problèmes de lag au lancement. Mais est-ce que ça vient de mon pc ou de mes modifs ???
+J'ai quand même l'impression que ça vient de mon pc, mais sinon reparter de la version 13 (celle de ludo 
+du 3/2 de 18h et des brouettes)
+
+--------------------------------
+Rémi:
+
+06/02
+
+- Pareil ça marche plus pour moi, ma fenêtre est blanche.
+
+- C'est dommage j'ai réussi à voir le rendu par chance et c'est pas mal, faut retourner sur une version précèdente sinon.
+
+--
