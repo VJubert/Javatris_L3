@@ -181,27 +181,13 @@ public class Frame extends JFrame {
 		// ajoute l'action du bouton pause du menu
 		pause.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				// on désactive les boutons pause et on active les boutons
-				// reprendre
-				pause.setEnabled(false);
-				bpause.setEnabled(false);
-				replay.setEnabled(true);
-				reprendre.setEnabled(true);
-				// on lance la pause
-				g.pause();
+				pause();
 			}
 		});
 		// ajoute l'action du bouton reprendre du menu
 		reprendre.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				// on désactive les boutons reprendre, on active les boutons
-				// pause
-				reprendre.setEnabled(false);
-				pause.setEnabled(true);
-				replay.setEnabled(false);
-				bpause.setEnabled(true);
-				// on reprend le jeu
-				g.reprendre();
+				reprendre();
 			}
 		});
 		// ajoute l'action du bouton fermer du menu
@@ -215,11 +201,10 @@ public class Frame extends JFrame {
 		voirHighScore.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				// on met en pause
-				g.pause();
+pause();
 				// on va voir les highscores
 				g.consulter_highscore();
 				// on reprend le jeu
-				g.reprendre();
 			}
 		});
 		// on ajoute l'action de reset des highscores
@@ -232,9 +217,8 @@ public class Frame extends JFrame {
 		help_controle.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// lance la pause,affiche l'aide et reprend le jeu
-				g.pause();
+pause();
 				affichage_aide();
-				g.reprendre();
 			}
 		});
 		// ajoute l'action pour le bouton paramètres
@@ -340,6 +324,29 @@ public class Frame extends JFrame {
 		// on affiche l'accueil
 		aff_accueil();
 		setVisible(true);
+	}
+
+
+	private void pause() {
+		// on désactive les boutons pause et on active les boutons
+		// reprendre
+		pause.setEnabled(false);
+		bpause.setEnabled(false);
+		replay.setEnabled(true);
+		reprendre.setEnabled(true);
+		// on lance la pause
+		g.pause();
+	}
+	
+	protected void reprendre(){
+		// on désactive les boutons reprendre, on active les boutons
+		// pause
+		reprendre.setEnabled(false);
+		pause.setEnabled(true);
+		replay.setEnabled(false);
+		bpause.setEnabled(true);
+		// on reprend le jeu
+		g.reprendre();
 	}
 
 	private void aff_accueil() {
@@ -475,22 +482,13 @@ public class Frame extends JFrame {
 		// idem (pause)
 		bpause.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				pause.setEnabled(false);
-				bpause.setEnabled(false);
-				replay.setEnabled(true);
-				reprendre.setEnabled(true);
-				g.pause();
-
+				pause();
 			}
 		});
 		// idem (reprendre)
 		replay.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				reprendre.setEnabled(false);
-				pause.setEnabled(true);
-				replay.setEnabled(false);
-				bpause.setEnabled(true);
-				g.reprendre();
+				reprendre();
 
 			}
 		});
